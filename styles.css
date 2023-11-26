@@ -17,7 +17,7 @@ html {
 
 #gameArea {
   width: 50vw;
-  height: 80vh;
+  height: 600px;
   background-image: url(./assets/flappybirdbg.png);
   position: relative;
   overflow: hidden;
@@ -57,10 +57,4 @@ html {
 #restartBtn {
   /* display: none; */
 }
-/* 
-@media screen and (max-width: 992px){
-  #gameArea {
-    width: 40vw;
-    height: 80vh;
-  }
-} */
+
