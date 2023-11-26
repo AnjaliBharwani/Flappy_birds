@@ -8,7 +8,6 @@ html {
   background-color: rgb(1, 6, 6);
   background-image: url(./assets/istockphoto-1465352994-170667a.webp);
   background-repeat: no-repeat;
-  /* width: fit-content; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +29,6 @@ html {
   width: 50px;
   height: 50px;
   position: absolute;
-  /* border-radius: 50%; */
   left: 25px;
 }
 
@@ -38,7 +36,6 @@ html {
   width: 50px;
   background-size: contain;
   background-repeat:no-repeat;
-  /* background-color: #228b22; */
   background-image: url(./assets/bottompipe.png);
   position: absolute;
   right: -50px; /* Initial position outside the game area */
