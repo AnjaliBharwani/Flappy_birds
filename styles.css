@@ -6,7 +6,6 @@ html {
   overflow: hidden;
   font-family: Arial, sans-serif;
   background-color: rgb(1, 6, 6);
-  background-image: url(./assets/istockphoto-1465352994-170667a.webp);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -18,6 +17,7 @@ html {
 #gameArea {
   width: 50vw;
   height: 600px;
+  /* background-color: #333; */
   background-image: url(./assets/flappybirdbg.png);
   position: relative;
   overflow: hidden;
@@ -56,5 +56,22 @@ html {
 
 #restartBtn {
   /* display: none; */
+  
 }
 
+/* @media screen and (max-width: 992px) {
+  #gameArea{
+    height: 50vh;
+    width: 50vw;
+    scale: 1.9;
+    margin-top: 360px; 
+    background-color: #71C5CF;
+    background-repeat: no-repeat;
+  
+  }
+  
+  #bird{
+    left: 150px;
+  }
+
+} */
