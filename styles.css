@@ -15,7 +15,7 @@ html {
   width: 60vw;
   height: 600px;
   /* background-color: #87ceeb; */
-  background-image: url(./flappybirdbg.png);
+  background-image: url(./assets/flappybirdbg.png);
   position: relative;
   overflow: hidden;
   border: 5px solid #333;
@@ -35,7 +35,7 @@ html {
   background-size: contain;
   background-repeat:no-repeat;
   /* background-color: #228b22; */
-  background-image: url(./bottompipe.png);
+  background-image: url(./assets/bottompipe.png);
   position: absolute;
   right: -50px; /* Initial position outside the game area */
 }
