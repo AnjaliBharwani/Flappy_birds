@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var pointSound = document.getElementById("pointSound");
     var wingSound = document.getElementById("wingSound");
 
+    // 
+    var backgroundMusic = document.getElementById("backgroundMusic");
+
     // Define initial game state
     var birdY = 200, birdVelocity = 0;
     var gravity = 0.5;
@@ -28,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
         gameOver = false;
         startBtn.style.display = "none";
         restartBtn.style.display = "none";
+
+        // 
+        backgroundMusic.play();
 
         // Set up game update interval
         gameInterval = setInterval(updateGameArea, 20);
@@ -132,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     // Function to handle game over
     function endGame() {
         gameOver = true;
@@ -139,7 +146,17 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(obstacleInterval);
         restartBtn.style.display = "block";
         hitSound.play();
+// 
+        backgroundMusic.pause();
+    }
 
+    function adjustVolume() {
+        var backgroundMusic = document.getElementById("backgroundMusic");
+        if (gameOver) {
+            backgroundMusic.volume = 0.1;  // Adjust the volume as needed
+        } else {
+            backgroundMusic.volume = 0.1;  // Set the normal volume when the game is ongoing
+        }
     }
 
     // Event listeners for start and restart buttons
@@ -149,3 +166,5 @@ document.addEventListener("DOMContentLoaded", function () {
         startGame();
     });
 });
+
+

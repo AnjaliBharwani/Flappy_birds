@@ -54,10 +54,10 @@ html {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#restartBtn {
-  /* display: none; */
+/* #restartBtn {
+  display: none;
   
-}
+} */
 
 /* @media screen and (max-width: 992px) {
   #gameArea{
@@ -74,4 +74,4 @@ html {
     left: 150px;
   }
 
-} */
+}  */
