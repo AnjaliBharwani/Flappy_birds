@@ -153,11 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function adjustVolume() {
         var backgroundMusic = document.getElementById("backgroundMusic");
         if (gameOver) {
-            backgroundMusic.volume = 0.1;  // Adjust the volume as needed
+            backgroundMusic.volume = 0;  // Adjust the volume as needed
         } else {
-            backgroundMusic.volume = 0.1;  // Set the normal volume when the game is ongoing
+            backgroundMusic.volume = 0.15;  // Set the normal volume when the game is ongoing
         }
     }
+    adjustVolume();
 
     // Event listeners for start and restart buttons
     startBtn.addEventListener("click", startGame);
@@ -166,5 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
         startGame();
     });
 });
+
 
 
